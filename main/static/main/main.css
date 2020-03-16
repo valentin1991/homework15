@@ -1,11 +1,13 @@
-.logo{
-  float: left;
+.logo {
+  left: 100px;
+  top: 30px;
   position: relative;
   font-size: 50px;
-  /* transition:  2s; */
+  position:absolute;
+  transition: transform 1s;
 
 }
 
 .logo:hover{
-  font-size: 70px;
+  transform: scale(1.5);
 }
