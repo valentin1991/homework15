@@ -8,23 +8,24 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="{% static 'main/main.css'%}">
-  <link rel="stylesheet" href="{% static 'main/home.css'%}">
+  <!-- <link rel="stylesheet" href="{% static 'main/home.css'%}"> -->
 
 </head>
 <body>
-  <a class=" logo font-weight-bold text-white text-decoration-none" href="#">Simpy</a>
-  <div class="d-flex flex-column flex-md-row align-items-center  p-5 px-md-5 mb-3 bg-dark border-bottom shadow-sm">
+  <div class="d-flex flex-column flex-md-row align-items-center  p-5 px-md-5  bg-dark border-bottom shadow-sm">
     <div class=" my-0 mr-md-auto">
+      <a class=" logo font-weight-bold text-white text-decoration-none" href="{% url 'main-home' %}">Simpy</a>
     </div>
     <nav class="my-2 my-md-0 mr-md-3 ">
-      <a class="p-2 text-white text-decoration-none" href="#"><b>Услуги</b></a>
+      <a class="p-2 text-white" href="#"><b>Услуги</b></a>
       <a class="p-2 text-white text-decoration-none" href="#"><b>Контакты</b></a>
       <a class="p-2 text-white text-decoration-none" href="#"><b>Про нас</b></a>
     </nav>
   </div>
-  <div class="container">
     {% block main_section %}
     {% endblock %}
-  </div>
+  <nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
+    <h6 class=" text-white text-decoration-none">@-Все права защищены</h6>
+  </nav>
 </body>
 </html>
