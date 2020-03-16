@@ -10,6 +10,6 @@
   transform: scale(1.5);
 }
 
-.part2{
+.part2, .part3 {
   background-color:#dae0e5;
 }
