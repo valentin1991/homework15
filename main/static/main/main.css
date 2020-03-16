@@ -1,3 +1,11 @@
-body{
-  background-color: red;
+.logo{
+  float: left;
+  position: relative;
+  font-size: 50px;
+  /* transition:  2s; */
+
+}
+
+.logo:hover{
+  font-size: 70px;
 }
